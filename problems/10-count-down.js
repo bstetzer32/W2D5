@@ -28,7 +28,31 @@ Example 4:
 
 ***********************************************************************/
 
-// your code here
+function countDownTimer(n) {
+  
+}
+
+
+
+
+
+
+
+// function countDownTimer(n) {
+//   let count = n 
+//   if (count > 0) {
+//     return function (){
+//       if (count === 0) {
+//         return "Happy New Year!"
+//       }
+//       else {
+//         return function () {
+//           count --
+//         }
+//       }
+//     } 
+//   } 
+// }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
