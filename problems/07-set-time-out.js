@@ -18,7 +18,9 @@ funcTimer(5000, partyFunc); // in 5 seconds prints: "Party time!"
 
 ***********************************************************************/
 
-// your code here!
+function funcTimer(time, func) {
+  setTimeout(func, time)
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
