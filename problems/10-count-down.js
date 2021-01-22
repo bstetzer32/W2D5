@@ -28,8 +28,25 @@ Example 4:
 
 ***********************************************************************/
 
+
 function countDownTimer(n) {
   
+  if (n === 0) {
+    return "Happy New Year!";
+  }
+  let count = n;
+  
+  let countdown = () => {
+    
+    count -= 1;
+    if (count <= 0) {
+      return "Happy New Year!"
+    }
+
+  }
+
+  return countdown;
+
 }
 
 
