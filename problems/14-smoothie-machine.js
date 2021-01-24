@@ -22,7 +22,31 @@ console.log(smoothie2("pineapple"));
 // prints "I'm having a smoothie with apples and bananas and berries and pineapple"
 ***********************************************************************/
 
-// your code here
+function smoothieMachine(...param1) {
+  let recipie = ["I'm having a smoothie with"];
+  let ingredients1 = [...param1];
+  for (let i = 0; i < ingredients1.length; i++) {
+    let ingredient = ingredients1[i];
+    if (recipie.length >= 2) {
+      recipie.push("and", ingredient)
+    } else {
+      recipie.push(ingredient)
+    }
+  }
+  return function inner(...param2) {
+    let ingredients2 = [...param2]
+    for (let j = 0; j < ingredients2.length; j++) {
+      let ingredient = ingredients2[j];
+      if (recipie.length >= 2) {
+        recipie.push("and", ingredient)
+      } else {
+        recipie.push(ingredient)
+      }
+      
+    }
+    return recipie.join(' ');
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
